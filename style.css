@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "futura md bt";
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(56, 57, 58);
+}
+header {
+    background: #fff;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+header .logo {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+header nav ul {
+    display: flex;
+}
+header nav ul li a {
+    display: inline-block;
+    color: #000;
+    padding: 5px 0;
+    margin: 0 10px;
+    border: 3px solid transparent;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+header nav ul li a:hover,
+header nav ul li a.active {
+    border-bottom-color: rgb(0, 0, 0);
+}
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: #000;
+}
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .hamburger {
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 70px;
+        width: 100%;
+        background: #fff;
+        padding: 30px;
+        transition: 0.3s;
+    }
+    header #nav_check:checked ~ nav {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+    }
+    header nav ul li a {
+        margin: 5px 0;
+    }
+}
+
+.div-inicio{
+    width: 80%;
+    height: 200%;
+    margin: 25px;
+    border-radius: 8px;
+
+    background: rgb(47, 47, 48);
+}
+.div-inicio ul li{
+    display: inline-block;
+}
+
+.div-inicio ul li img{
+    border-radius: 50%;
+    transition: 1s;
+    -webkit-box-shadow:0px 0px 54px 8px rgba(0,0,0,0.65);
+-moz-box-shadow: 0px 0px 54px 8px rgba(0,0,0,0.65);
+box-shadow: 0px 0px 54px 8px rgba(0,0,0,0.65);
+}
+
+.div-inicio ul li img:hover{
+    border-radius: 20%;
+    transition: 1s;
+    -webkit-box-shadow:0px 0px 81px 8px rgba(255,255,255,0.65);
+    -moz-box-shadow: 0px 0px 81px 8px rgba(255,255,255,0.65);
+    box-shadow: 0px 0px 81px 8px rgba(255,255,255,0.65);
+}
+
+.pene-sucio{
+    width: 50%;
+    height: 90%;
+    text-align-last: center;
+    background: gray;
+    border-radius: 12px;
+    opacity: 0.7;
+    color: #000;
+}
+
+
+
+
+
+.div-inicio-img{
+    width: 80%;
+    height: 200%;
+    margin: 25px;
+    border-radius: 8px;
+
+    background: rgb(47, 47, 48);
+}
+.div-inicio-img ul li{
+    display: inline-block;
+}
+
+.div-inicio-img ul li img{
+    width: 300p;
+    height: 300px;
+    border-radius: 12px;
+    margin: 8px;
+    -webkit-box-shadow:0px 0px 0px 6px rgb(255, 255, 255);
+    -moz-box-shadow: 0px 0px 0px 6px rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px 6px rgb(255, 255, 255);
+    transition: 1s;
+    cursor: default;
+}
+
+.div-inicio-img ul li{
+    width: auto;
+    -webkit-box-shadow:0px 0px 0px 6px rgb(255, 255, 255);
+    -moz-box-shadow: 0px 0px 0px 6px rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px 6px rgb(255, 255, 255);
+    margin: 12px;
+    border-radius: 12px;
+}
+
+.div-inicio-img ul li label{
+    color: white;
+}
+
+.div-inicio-img ul li button{
+    width: 300px;
+    height: 40px;
+    border-radius: 12px;
+    background: #000;
+    color: white;
+    -webkit-box-shadow:0px 0px 0px 6px rgb(255, 255, 255);
+    -moz-box-shadow: 0px 0px 0px 6px rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px 6px rgb(255, 255, 255);
+}
+
+.div-inicio-img ul li button:hover{
+    background: white;
+    color: black;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.logo{
+    text-shadow: rgba(62,66,66,0.56) 14px 16px 6px;
+}
